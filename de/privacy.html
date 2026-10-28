@@ -95,6 +95,7 @@
     a {
       color: var(--accent);
     }
+    .todo { background: #fff1a8; color: #6b4e00; padding: 0 4px; border-radius: 4px; }
   </style>
 </head>
 <body>
@@ -105,12 +106,22 @@
       <p>
         Diese Erklärung beschreibt, welche Daten bei der Nutzung der NutriAI-App verarbeitet werden können, wofür sie verwendet werden und welche Rechte du an deinen Daten hast.
       </p>
-      <div class="meta">Zuletzt aktualisiert: 3. Oktober 2026</div>
+      <div class="meta">Zuletzt aktualisiert: <span class="todo">[[Veröffentlichungsdatum]]</span></div>
     </section>
 
     <div class="stack">
       <section class="section">
-        <h2>1. Erhobene Daten</h2>
+        <h2>1. Verantwortlicher</h2>
+        <p>
+          Verantwortlich für die Verarbeitung deiner personenbezogenen Daten ist:
+        </p>
+        <p>
+          <span class="todo">[[vollständiger Name]]</span><br><span class="todo">[[Postanschrift]]</span><br>E-Mail: <span class="todo">[[Kontakt-E-Mail: mhtndyn363@gmail.com oder mhtndyn.34@gmail.com]]</span>
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>2. Erhobene Daten</h2>
         <p>
           Je nach genutzten Funktionen kann NutriAI folgende Daten verarbeiten:
         </p>
@@ -123,57 +134,104 @@
           <li>Eingaben, Texte und, wenn du es wählst, Mahlzeitenfotos, die du an KI-Funktionen sendest</li>
           <li>Begrenzte Prüfdaten zu deinem Abo und deinen Käufen</li>
         </ul>
-      </section>
-
-      <section class="section">
-        <h2>2. Wofür wir Daten verwenden</h2>
-        <ul>
-          <li>Um ein persönliches Ernährungs- und Gesundheitserlebnis zu bieten</li>
-          <li>Um KI-gestützte Vorschläge, Rezepte, Analysen und Planaktualisierungen zu erstellen</li>
-          <li>Um die Fotoanalyse von Mahlzeiten nur dann auszuführen, wenn du sie startest</li>
-          <li>Um Erinnerungen zu planen und die App zu verbessern</li>
-          <li>Um deinen Abostatus zu prüfen und den Premium-Zugang zu verwalten</li>
-          <li>Um grundlegende technische Protokolle für Fehlersuche, Sicherheit und Servicequalität zu führen</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2>3. Dienste von Drittanbietern</h2>
         <p>
-          NutriAI kann zur Bereitstellung des Dienstes Drittanbieter nutzen:
+          Gewicht, Körpermaße, Allergien, Ernährungs- und Aktivitätsdaten können Rückschlüsse auf deine Gesundheit zulassen. Sie gehören zu den besonderen Kategorien personenbezogener Daten nach Art. 9 DSGVO und werden nur mit deiner ausdrücklichen Einwilligung verarbeitet.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>3. Zwecke und Rechtsgrundlagen</h2>
+        <ul>
+          <li>Bereitstellung der App, deines Kontos, deiner Einträge, Pläne und des Premium-Zugangs (Art. 6 Abs. 1 lit. b DSGVO, Vertragserfüllung)</li>
+          <li>Verarbeitung gesundheitsbezogener Daten und Übermittlung an den KI-Dienst für Analysen, Rezepte und Pläne (Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a DSGVO, deine ausdrückliche Einwilligung)</li>
+          <li>Lesen von Gesundheits- und Aktivitätsdaten aus Apple Health oder Health Connect (Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a DSGVO, deine Einwilligung über die Systemberechtigung)</li>
+          <li>Erinnerungen und Benachrichtigungen (Art. 6 Abs. 1 lit. a DSGVO, deine Einwilligung)</li>
+          <li>Grundlegende technische Protokolle für Sicherheit, Missbrauchsschutz und Fehlerbehebung (Art. 6 Abs. 1 lit. f DSGVO, unser berechtigtes Interesse an einem sicheren und funktionierenden Dienst)</li>
+        </ul>
+        <p>
+          Du kannst eine Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen, zum Beispiel im Profil, in den Systemeinstellungen oder per E-Mail. Der Widerruf berührt nicht die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>4. Dienste von Drittanbietern</h2>
+        <p>
+          NutriAI nutzt zur Bereitstellung des Dienstes folgende Auftragsverarbeiter und Dienste:
         </p>
         <ul>
           <li>Supabase: Anmeldung, Datenbank und Speicher</li>
           <li>RevenueCat: Prüfung von Abos und Berechtigungen</li>
           <li>Google Gemini: Erstellung von Analysen und Vorschlägen aus dem von dir gewählten Mahlzeitenfoto oder Text sowie, je nach Funktion, aus Alter, Größe, Gewicht, Ziel, Ernährungsvorlieben, Allergien, nicht gemochten Lebensmitteln, Trainingsvorlieben und zugehörigen Aktivitätsdaten. Mahlzeitenfotos werden vor dem Senden verkleinert.</li>
-          <li>USDA FoodData Central und Google Translate: Suchtexte für Lebensmittel und Übersetzung von Lebensmittelnamen; die Anfragen laufen über Supabase</li>
+          <li>USDA FoodData Central und Google Translate: Suchtexte für Lebensmittel und Übersetzung von Lebensmittelnamen; die Anfragen laufen über Supabase und enthalten keine Kontodaten</li>
         </ul>
         <p>
-          Bevor Daten zum ersten Mal an Google Gemini übermittelt werden, bittet die App dich um deine ausdrückliche Einwilligung. Du kannst sie in deinem Profil widerrufen. Diese Dienste werden nur so weit genutzt, wie es für die jeweilige Funktion nötig ist. Drittanbieter können eigenen Datenschutzbestimmungen unterliegen.
+          Bevor Daten zum ersten Mal an Google Gemini übermittelt werden, bittet die App dich um deine ausdrückliche Einwilligung. Du kannst sie in deinem Profil widerrufen. Diese Dienste werden nur so weit genutzt, wie es für die jeweilige Funktion nötig ist.
         </p>
       </section>
 
       <section class="section">
-        <h2>4. Speicherung und Sicherheit</h2>
+        <h2>5. Speicherort und Übermittlung in Drittländer</h2>
+        <ul>
+          <li>Unsere Datenbank und unser Speicher (Supabase) befinden sich in Tokio, Japan. Die Europäische Kommission hat für Japan ein angemessenes Datenschutzniveau festgestellt (Art. 45 DSGVO).</li>
+          <li>Google (Gemini, Translate) und RevenueCat können Daten in den USA verarbeiten. Grundlage dieser Übermittlung ist <span class="todo">[[Zertifizierung nach dem EU-US Data Privacy Framework und/oder Standardvertragsklauseln: für Google und RevenueCat prüfen]]</span>.</li>
+          <li>Apple und Google verarbeiten Kaufdaten als eigenständige Verantwortliche nach ihren eigenen Bedingungen.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>6. Speicherdauer</h2>
+        <ul>
+          <li>Konto, Profil, Einträge und Pläne: bis du dein Konto löschst</li>
+          <li>Zwischengespeicherte KI-Ergebnisse: werden nach 24 Stunden automatisch gelöscht</li>
+          <li>Technische Protokolle: <span class="todo">[[Aufbewahrungsdauer der Protokolle]]</span></li>
+          <li>Kaufbelege: werden von Apple oder Google nach deren Regeln aufbewahrt</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>7. Deine Rechte</h2>
         <p>
-          Daten können so lange gespeichert werden, wie es für die Bereitstellung des Dienstes nötig ist oder gesetzliche Pflichten es verlangen. NutriAI setzt angemessene technische und organisatorische Maßnahmen zum Schutz deiner Daten ein; kein System ist jedoch völlig risikofrei.
+          Wenn die DSGVO für dich gilt, hast du das Recht auf:
+        </p>
+        <ul>
+          <li>Auskunft über die Daten, die wir über dich speichern (Art. 15)</li>
+          <li>Berichtigung unrichtiger Daten (Art. 16)</li>
+          <li>Löschung deiner Daten (Art. 17); das kannst du selbst unter Profil &rarr; Konto löschen tun</li>
+          <li>Einschränkung der Verarbeitung (Art. 18)</li>
+          <li>Erhalt deiner Daten in einem strukturierten, maschinenlesbaren Format (Art. 20)</li>
+          <li>Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen (Art. 21)</li>
+          <li>Widerruf einer Einwilligung jederzeit (Art. 7 Abs. 3)</li>
+        </ul>
+        <p>
+          Um diese Rechte auszuüben, schreib an <span class="todo">[[Kontakt-E-Mail: mhtndyn363@gmail.com oder mhtndyn.34@gmail.com]]</span>. Außerdem hast du das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, insbesondere in dem EU-Land, in dem du wohnst oder arbeitest.
         </p>
       </section>
 
       <section class="section">
-        <h2>5. Löschung und deine Rechte</h2>
+        <h2>8. Konto löschen</h2>
         <p>
-          Deine Profilangaben und App-Einstellungen kannst du in der App ändern. Unter Profil &rarr; Konto löschen kannst du dein Konto, dein Profil und die zugehörigen App-Daten dauerhaft löschen. Das Löschen des Kontos kündigt dein App-Store-Abo nicht automatisch; verwalte dein Abo in den Einstellungen deines Apple-Kontos. Für Transaktionsdaten der Stores gelten die Aufbewahrungsregeln des jeweiligen Anbieters. Bei Fragen kannst du uns kontaktieren.
-        </p>
-        <p>
-          Kontakt: <a href="mailto:mhtndyn.34@gmail.com">mhtndyn.34@gmail.com</a>
+          Unter Profil &rarr; Konto löschen kannst du dein Konto, dein Profil und die zugehörigen App-Daten dauerhaft löschen. Das Löschen des Kontos kündigt dein App-Store-Abo nicht automatisch; verwalte dein Abo in den Einstellungen deines Apple-Kontos.
         </p>
       </section>
 
       <section class="section">
-        <h2>6. Wichtiger Hinweis</h2>
+        <h2>9. Automatisierte Entscheidungen</h2>
         <p>
-          NutriAI ist eine unterstützende App für Gesundheit und Ernährung; sie ersetzt keine ärztliche Diagnose, Behandlung oder professionelle Gesundheitsversorgung.
+          Von der KI erstellte Pläne, Analysen und Vorschläge sind Empfehlungen. Sie sind keine Entscheidungen mit rechtlicher oder ähnlich erheblicher Wirkung für dich im Sinne von Art. 22 DSGVO.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>10. Kinder</h2>
+        <p>
+          NutriAI richtet sich nicht an Kinder unter <span class="todo">[[Mindestalter, z. B. 16]]</span> Jahren. Wir erheben wissentlich keine Daten von ihnen.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>11. Sicherheit und wichtiger Hinweis</h2>
+        <p>
+          NutriAI setzt angemessene technische und organisatorische Maßnahmen zum Schutz deiner Daten ein; kein System ist jedoch völlig risikofrei. NutriAI ist eine unterstützende App für Gesundheit und Ernährung; sie ersetzt keine ärztliche Diagnose, Behandlung oder professionelle Gesundheitsversorgung.
         </p>
       </section>
     </div>

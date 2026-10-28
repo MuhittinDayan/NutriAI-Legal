@@ -95,6 +95,7 @@
     a {
       color: var(--accent);
     }
+    .todo { background: #fff1a8; color: #6b4e00; padding: 0 4px; border-radius: 4px; }
   </style>
 </head>
 <body>
@@ -105,12 +106,22 @@
       <p>
         This policy explains which data may be processed when you use the NutriAI app, what it is used for, and your rights over your data.
       </p>
-      <div class="meta">Last updated: 3 October 2026</div>
+      <div class="meta">Last updated: <span class="todo">[[publication date]]</span></div>
     </section>
 
     <div class="stack">
       <section class="section">
-        <h2>1. Data we collect</h2>
+        <h2>1. Controller</h2>
+        <p>
+          The controller responsible for processing your personal data is:
+        </p>
+        <p>
+          <span class="todo">[[full name]]</span><br><span class="todo">[[postal address]]</span><br>E-mail: <span class="todo">[[contact e-mail: mhtndyn363@gmail.com or mhtndyn.34@gmail.com]]</span>
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>2. Data we collect</h2>
         <p>
           Depending on the features you use, NutriAI may process the following data:
         </p>
@@ -123,57 +134,104 @@
           <li>Prompts, text and, if you choose, meal photos that you send to AI features</li>
           <li>Limited verification data about your subscription and purchases</li>
         </ul>
-      </section>
-
-      <section class="section">
-        <h2>2. Why we use data</h2>
-        <ul>
-          <li>To provide a personalised nutrition and health experience</li>
-          <li>To create AI-assisted suggestions, recipes, analyses and plan updates</li>
-          <li>To run meal photo analysis only when you start it</li>
-          <li>To schedule reminders and improve the in-app experience</li>
-          <li>To verify your subscription status and manage premium access</li>
-          <li>To keep basic technical logs for debugging, security and service quality</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2>3. Third-party services</h2>
         <p>
-          NutriAI may use third-party services to provide the service:
+          Weight, body measurements, allergies, diet and activity data can reveal information about your health. They are special categories of personal data under Article 9 GDPR and are processed only with your explicit consent.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>3. Why we use data and on which legal basis</h2>
+        <ul>
+          <li>Providing the app, your account, logs, plans and premium access (Art. 6(1)(b) GDPR, performance of a contract)</li>
+          <li>Processing health-related data and sharing data with the AI service to create analyses, recipes and plans (Art. 6(1)(a) and Art. 9(2)(a) GDPR, your explicit consent)</li>
+          <li>Reading health and activity data from Apple Health or Health Connect (Art. 6(1)(a) and Art. 9(2)(a) GDPR, your consent, given in the system permission)</li>
+          <li>Reminders and notifications (Art. 6(1)(a) GDPR, your consent)</li>
+          <li>Basic technical logs for security, abuse prevention and fixing errors (Art. 6(1)(f) GDPR, our legitimate interest in a secure and working service)</li>
+        </ul>
+        <p>
+          You can withdraw a consent at any time with effect for the future, for example in your profile, in the system settings or by e-mail. Withdrawal does not affect processing that took place before it.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>4. Third-party services</h2>
+        <p>
+          NutriAI uses the following processors and services to provide the service:
         </p>
         <ul>
           <li>Supabase: authentication, database and storage</li>
           <li>RevenueCat: subscription and entitlement verification</li>
           <li>Google Gemini: creating analyses and suggestions from the meal photo or text you choose and, depending on the feature, your age, height, weight, goal, nutrition preferences, allergies, disliked foods, training preferences and related activity data. Meal photos are resized before they are sent.</li>
-          <li>USDA FoodData Central and Google Translate: food search text and translation of food names; requests are sent through Supabase</li>
+          <li>USDA FoodData Central and Google Translate: food search text and translation of food names; requests are sent through Supabase and contain no account data</li>
         </ul>
         <p>
-          The app asks for your explicit consent before data is first shared with Google Gemini. You can withdraw this consent in your profile. These services are used only as far as needed to run the related feature. Third-party providers may be subject to their own privacy policies.
+          The app asks for your explicit consent before data is first shared with Google Gemini. You can withdraw this consent in your profile. These services are used only as far as needed to run the related feature.
         </p>
       </section>
 
       <section class="section">
-        <h2>4. Data retention and security</h2>
+        <h2>5. Where data is stored and international transfers</h2>
+        <ul>
+          <li>Our database and storage (Supabase) are hosted in Tokyo, Japan. The European Commission has recognised Japan as providing an adequate level of data protection (Art. 45 GDPR).</li>
+          <li>Google (Gemini, Translate) and RevenueCat may process data in the United States. These transfers rely on <span class="todo">[[EU-US Data Privacy Framework certification and/or Standard Contractual Clauses: confirm for Google and RevenueCat]]</span>.</li>
+          <li>Apple and Google process purchase data under their own terms as independent controllers.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>6. How long we keep data</h2>
+        <ul>
+          <li>Account, profile, logs and plans: until you delete your account</li>
+          <li>Cached AI results: deleted automatically after 24 hours</li>
+          <li>Technical logs: <span class="todo">[[log retention period]]</span></li>
+          <li>Purchase records: kept by Apple or Google under their retention rules</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>7. Your rights</h2>
         <p>
-          Data may be kept for as long as needed to provide the service or as required by legal obligations. NutriAI aims to apply reasonable technical and organisational measures to protect your data; however, no system is completely free of risk.
+          If the GDPR applies to you, you have the right to:
+        </p>
+        <ul>
+          <li>access the personal data we hold about you (Art. 15)</li>
+          <li>have incorrect data corrected (Art. 16)</li>
+          <li>have your data deleted (Art. 17); you can do this yourself in Profile &rarr; Delete my account</li>
+          <li>restrict processing (Art. 18)</li>
+          <li>receive your data in a structured, machine-readable format (Art. 20)</li>
+          <li>object to processing based on legitimate interests (Art. 21)</li>
+          <li>withdraw any consent at any time (Art. 7(3))</li>
+        </ul>
+        <p>
+          To use these rights, write to <span class="todo">[[contact e-mail: mhtndyn363@gmail.com or mhtndyn.34@gmail.com]]</span>. You also have the right to lodge a complaint with a data protection supervisory authority, in particular in the EU country where you live or work.
         </p>
       </section>
 
       <section class="section">
-        <h2>5. Deleting data and your rights</h2>
+        <h2>8. Deleting your account</h2>
         <p>
-          You can update your profile information and in-app preferences in the app. In Profile &rarr; Delete my account you can permanently delete your account, your profile and the related app records. Deleting your account does not cancel your App Store subscription automatically; manage your subscription in your Apple account settings. Store transaction records are subject to the retention policy of the relevant provider. Contact us if you need help.
-        </p>
-        <p>
-          Contact: <a href="mailto:mhtndyn.34@gmail.com">mhtndyn.34@gmail.com</a>
+          In Profile &rarr; Delete my account you can permanently delete your account, your profile and the related app records. Deleting your account does not cancel your App Store subscription automatically; manage your subscription in your Apple account settings.
         </p>
       </section>
 
       <section class="section">
-        <h2>6. Important note</h2>
+        <h2>9. Automated decisions</h2>
         <p>
-          NutriAI is a health and nutrition support app; it does not replace medical diagnosis, treatment or professional healthcare.
+          AI-created plans, analyses and suggestions are recommendations. They are not decisions with legal or similarly significant effects on you within the meaning of Article 22 GDPR.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>10. Children</h2>
+        <p>
+          NutriAI is not intended for children under <span class="todo">[[minimum age, e.g. 16]]</span>. We do not knowingly collect data from them.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>11. Security and important note</h2>
+        <p>
+          NutriAI applies reasonable technical and organisational measures to protect your data; however, no system is completely free of risk. NutriAI is a health and nutrition support app; it does not replace medical diagnosis, treatment or professional healthcare.
         </p>
       </section>
     </div>
